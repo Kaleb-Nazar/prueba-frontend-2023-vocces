@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Ejercicio 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="src/css/styles5.css"> -->
+
 </head>
 <body>
     <article>
@@ -12,5 +16,79 @@
         <p>Queremos mostrar el listado de usarios que existen en nuestro sistema y que al hacer click sobre uno de ellos nos muestre la información del usuario.</p>
         <p>Para obtener el listado de usuarios el backend nos ha proporcionado el siguiente endpoint <a href="https://jsonplaceholder.typicode.com/users" target="_blank">Users</a>.</p>
     </article>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-group" id="list-user">
+
+                </ul>
+            </div>
+        </div>        
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Información del usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <p>Información usuario</p>
+                            <ul class="list-group">
+                                <li class="list-group-item" >ID: <span id="id"></span></li>
+                                <li class="list-group-item" >Name: <span id="name"></span></li>
+                                <li class="list-group-item" >Email: <span id="email"></span></li>
+                                <li class="list-group-item" >Phone: <span id="phone"></span></li>
+                                <li class="list-group-item" >Username: <span id="username"></span></li>
+                                <li class="list-group-item" >Website: <span id="website"></span></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="col-12 mb-3">
+                            <p>Compañia</p>
+                            <ul class="list-group">
+                                <li class="list-group-item" >Nombre<span id="name"></span></li>
+                                <li class="list-group-item" >BS: <span id="bs"></span></li>
+                                <li class="list-group-item" >Catch Phrase: <span id="catchPhrase"></span></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="col-12 mb-3">
+                            <p>Direccion</p>
+                            <ul class="list-group">
+                                <li class="list-group-item" >Street: <span id="street"></span></li>
+                                <li class="list-group-item" >Suite: <span id="suite"></span></li>
+                                <li class="list-group-item" >City: <span id="city"></span></li>
+                                <li class="list-group-item" >ZipCode: <span id="zipcode"></span></li>
+                                <li class="list-group-item" >
+                                    <span>Geo:</span>
+                                    <ul class="list-group">
+                                        <li class="list-group-item" >Lat: <span id="lat"></span></li>
+                                        <li class="list-group-item" >Long: <span id="lng"></span></li>
+                                    </ul>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js" integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script src="src/js/js5.js"></script>
+
 </body>
 </html>
